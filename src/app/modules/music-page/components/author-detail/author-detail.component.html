@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="author">
+        <app-author [author]="author"></app-author>
+    </div>
+    <div class="music-list">
+        @for (music of authorMusicList; track $index)
+        {
+        <div class="item">
+            <div (click)="playMusic(music.id)" class="btn">
+                <div class="img">
+                    @if (music.image) {
+                    <img [src]="music.image">
+                    }
+                </div>
+                <div class="header">
+                    <h2>{{music.name}}</h2>
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+
+</div>

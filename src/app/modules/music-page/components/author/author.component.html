@@ -1,0 +1,13 @@
+<div class="item">
+    <button class="btn" [routerLink]="['/author-datail', author.name]">
+        <div class="title">
+            <h2>{{author.name}}</h2>
+            <div class="title__fon"></div>
+        </div>
+        <div class="img">
+            @if (author.image) {
+                <img [src]="author.image">
+            }
+        </div>
+    </button>
+</div>

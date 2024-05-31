@@ -1,0 +1,65 @@
+:host {
+    display: block;
+    position: relative;
+}
+
+.router {
+    padding: 100px 0;
+}
+
+.content {
+
+    width: 1000px;
+    margin: auto;
+    margin-top: 60px;
+}
+
+// .header {
+//     border: 1px solid red;
+// }
+
+.header {
+    position: relative;
+    z-index: 5;
+    width: 100%;
+
+    height: 50px;
+    position: fixed;
+    top: 0px;
+
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+
+
+    padding: 15px;
+
+}
+
+.links {
+    display: flex;
+}
+
+.link {
+    margin-right: 15px;
+}
+
+.link:last-child {
+    margin-right: 0px;
+}
+
+.player {
+    width: 100%;
+    background-color: gray;
+
+    position: fixed;
+    bottom: 0;
+    z-index: 5;
+}
+
+.paths {
+    display: flex;
+}
